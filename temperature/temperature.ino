@@ -126,6 +126,8 @@ void loop()
     oled.display();
     delay(2000);
 
+    temperatureReading.temp = temp;
+
    ///////////////////////////////////////// Stuff buffer with struct
   sendSize = myTransfer.txObj(temperatureReading, sendSize);
 
