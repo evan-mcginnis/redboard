@@ -99,6 +99,7 @@ void Get_AHT10_Data(){
   AHT10_Temp=Temp.temperature;
 }
 
+// Indicate that there is a problem by flashing the LEDs rapidly
 void flashError(){
     for(int i = 1; i < 200; i++){
       digitalWrite(LED_Humidity_Pin, HIGH);    // Turn the LED on (HIGH is the voltage level)
